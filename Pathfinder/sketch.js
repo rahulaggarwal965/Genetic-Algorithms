@@ -1,4 +1,5 @@
-let grid, cols, rows, input, canvas, solid;
+let grid, cols, rows, input, canvas;
+var solid = [];
 let res = 30;
 var start = null;
 var end = null;

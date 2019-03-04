@@ -16,4 +16,11 @@ class PathFinder {
   crossover(partner) {
     let child = new PathFinder();
   }
+
+  // fireRays(n) {
+  //   let dAngle = 360/n
+  //   for (let i = 0; i < n; i++) {
+  //     line()
+  //   }
+  // }
 }

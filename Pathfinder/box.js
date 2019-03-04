@@ -19,7 +19,8 @@ class Box {
      if(mouseButton === RIGHT) {
        this.fillState = "clear";
        if (solid.includes(this)) {
-         solid.remove
+         let i = solid.indexOf(this);
+         solid.splice(i, 1);
        }
      } else if(fillState != false) {
        if(fillState === "start") {
@@ -42,7 +43,10 @@ class Box {
        }
        return this;
      } else {
-       this.fillState = "solid";
+       if (!solid.includes(this)) {
+         this.fillState = "solid";
+         solid.push(this);
+       }
      }
     }
   }

@@ -23,9 +23,3 @@ function randomMoveSet(arr, length, posX, posY) {
     return randomMoveSet(arr, length - 1, posX, posY);
   }
 }
-
-Array.prototype.remove = function(element) {
-  this = this.filter(function(e) {
-    return e != element;
-  })
-}
